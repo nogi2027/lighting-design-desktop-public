@@ -1,0 +1,236 @@
+[
+  {
+    "name": "@fontsource-variable/geist",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "repository": "git+https://github.com/fontsource/font-files.git",
+    "texts": [
+      "licenses/_fontsource-variable_geist-5.3.0-LICENSE"
+    ]
+  },
+  {
+    "name": "@fontsource-variable/geist-mono",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "repository": "git+https://github.com/fontsource/font-files.git",
+    "texts": [
+      "licenses/_fontsource-variable_geist-mono-5.3.0-LICENSE"
+    ]
+  },
+  {
+    "name": "@napi-rs/canvas",
+    "version": "1.0.3",
+    "license": "MIT",
+    "repository": "git+https://github.com/Brooooooklyn/canvas.git",
+    "texts": [
+      "licenses/_napi-rs_canvas-1.0.3-LICENSE"
+    ]
+  },
+  {
+    "name": "@napi-rs/canvas-darwin-arm64",
+    "version": "1.0.3",
+    "license": "MIT",
+    "repository": "git+https://github.com/Brooooooklyn/canvas.git",
+    "texts": [
+      "licenses/_napi-rs_canvas-darwin-arm64-1.0.3-LICENSE"
+    ]
+  },
+  {
+    "name": "bmp-js",
+    "version": "0.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/shaozilee/bmp-js",
+    "texts": [
+      "licenses/bmp-js-0.1.0-LICENSE"
+    ]
+  },
+  {
+    "name": "drizzle-orm",
+    "version": "0.45.2",
+    "license": "Apache-2.0",
+    "repository": "git+https://github.com/drizzle-team/drizzle-orm.git",
+    "texts": [
+      "licenses/drizzle-orm-0.45.2-LICENSE.md"
+    ]
+  },
+  {
+    "name": "fflate",
+    "version": "0.8.3",
+    "license": "MIT",
+    "repository": "https://github.com/101arrowz/fflate",
+    "texts": [
+      "licenses/fflate-0.8.3-LICENSE"
+    ]
+  },
+  {
+    "name": "idb-keyval",
+    "version": "6.3.0",
+    "license": "Apache-2.0",
+    "repository": "git+https://github.com/jakearchibald/idb-keyval.git",
+    "texts": [
+      "licenses/idb-keyval-6.3.0-LICENCE"
+    ]
+  },
+  {
+    "name": "is-url",
+    "version": "1.2.4",
+    "license": "MIT",
+    "repository": "https://github.com/segmentio/is-url",
+    "texts": [
+      "licenses/is-url-1.2.4-LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "isomorphic.js",
+    "version": "0.2.5",
+    "license": "MIT",
+    "repository": "git+https://github.com/dmonad/isomorphic.js.git",
+    "texts": [
+      "licenses/isomorphic.js-0.2.5-LICENSE"
+    ]
+  },
+  {
+    "name": "lib0",
+    "version": "0.2.117",
+    "license": "MIT",
+    "repository": "git+https://github.com/dmonad/lib0.git",
+    "texts": [
+      "licenses/lib0-0.2.117-LICENSE"
+    ]
+  },
+  {
+    "name": "node-fetch",
+    "version": "2.7.0",
+    "license": "MIT",
+    "repository": "https://github.com/bitinn/node-fetch.git",
+    "texts": [
+      "licenses/node-fetch-2.7.0-LICENSE.md"
+    ]
+  },
+  {
+    "name": "opencollective-postinstall",
+    "version": "2.0.3",
+    "license": "MIT",
+    "repository": "git+https://github.com/opencollective/opencollective-postinstall.git",
+    "texts": [
+      "licenses/opencollective-postinstall-2.0.3-LICENSE"
+    ]
+  },
+  {
+    "name": "pdfjs-dist",
+    "version": "6.2.108",
+    "license": "Apache-2.0",
+    "repository": "git+https://github.com/mozilla/pdf.js.git",
+    "texts": [
+      "licenses/pdfjs-dist-6.2.108-LICENSE"
+    ]
+  },
+  {
+    "name": "react",
+    "version": "19.2.6",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/react.git",
+    "texts": [
+      "licenses/react-19.2.6-LICENSE"
+    ]
+  },
+  {
+    "name": "react-dom",
+    "version": "19.2.6",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/react.git",
+    "texts": [
+      "licenses/react-dom-19.2.6-LICENSE"
+    ]
+  },
+  {
+    "name": "regenerator-runtime",
+    "version": "0.13.11",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/regenerator/tree/main/packages/runtime",
+    "texts": [
+      "licenses/regenerator-runtime-0.13.11-LICENSE"
+    ]
+  },
+  {
+    "name": "scheduler",
+    "version": "0.27.0",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/react.git",
+    "texts": [
+      "licenses/scheduler-0.27.0-LICENSE"
+    ]
+  },
+  {
+    "name": "tesseract.js",
+    "version": "7.0.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/naptha/tesseract.js.git",
+    "texts": [
+      "licenses/tesseract.js-7.0.0-LICENSE.md"
+    ]
+  },
+  {
+    "name": "tesseract.js-core",
+    "version": "7.0.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/naptha/tesseract.js-core.git",
+    "texts": [
+      "licenses/tesseract.js-core-7.0.0-LICENSE"
+    ]
+  },
+  {
+    "name": "tr46",
+    "version": "0.0.3",
+    "license": "MIT",
+    "repository": "git+https://github.com/Sebmaster/tr46.js.git",
+    "texts": [
+      "licenses/tr46-0.0.3-LICENSE.md"
+    ]
+  },
+  {
+    "name": "wasm-feature-detect",
+    "version": "1.9.0",
+    "license": "Apache-2.0",
+    "repository": "GoogleChromeLabs/wasm-feature-detect",
+    "texts": [
+      "licenses/wasm-feature-detect-1.9.0-LICENSE"
+    ]
+  },
+  {
+    "name": "webidl-conversions",
+    "version": "3.0.1",
+    "license": "BSD-2-Clause",
+    "repository": "jsdom/webidl-conversions",
+    "texts": [
+      "licenses/webidl-conversions-3.0.1-LICENSE.md"
+    ]
+  },
+  {
+    "name": "whatwg-url",
+    "version": "5.0.0",
+    "license": "MIT",
+    "repository": "jsdom/whatwg-url",
+    "texts": [
+      "licenses/whatwg-url-5.0.0-LICENSE.txt"
+    ]
+  },
+  {
+    "name": "yjs",
+    "version": "13.6.32",
+    "license": "MIT",
+    "repository": "https://github.com/yjs/yjs.git",
+    "texts": [
+      "licenses/yjs-13.6.32-LICENSE"
+    ]
+  },
+  {
+    "name": "zlibjs",
+    "version": "0.3.1",
+    "license": "MIT",
+    "repository": "git://github.com/imaya/zlib.js.git",
+    "texts": [
+      "licenses/zlibjs-0.3.1-LICENSE"
+    ]
+  }
+]

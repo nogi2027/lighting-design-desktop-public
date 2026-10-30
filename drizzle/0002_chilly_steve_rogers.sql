@@ -1,0 +1,1 @@
+ALTER TABLE `workspace_state` ADD `recent_mutations` text DEFAULT '[]' NOT NULL;

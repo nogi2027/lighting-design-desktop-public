@@ -1,0 +1,16 @@
+packages:
+  - electron
+allowBuilds:
+  electron: true
+  electron-winstaller: false
+  esbuild: true
+  sharp: true
+  tesseract.js: false
+  workerd: true
+minimumReleaseAgeExclude:
+  - electron@44.5.1
+onlyBuiltDependencies:
+  - electron
+  - esbuild
+  - sharp
+  - workerd

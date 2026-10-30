@@ -1,0 +1,132 @@
+{
+  "name": "lighting-design-desktop",
+  "version": "0.1.0-preview.2",
+  "private": true,
+  "packageManager": "pnpm@11.16.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite build --watch --config vite.desktop.config.ts",
+    "build": "node scripts/dependency-notices.mjs && node scripts/prepare-assets.mjs && node scripts/build-desktop-backend.mjs && vite build --config vite.desktop.config.ts",
+    "start": "electron .",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node --test tests/import-layout.test.mjs tests/reading-renderer.test.mjs tests/pdf-zoom.test.mjs tests/cue-marker.test.mjs tests/sync-v2-yjs.test.mjs tests/sync-v2-notifications.test.mjs tests/sync-v2-validation.test.mjs tests/sync-v2-text-recovery.test.mjs tests/performance.test.mjs tests/desktop-backend.test.mjs tests/show-format.test.mjs",
+    "test": "pnpm typecheck && pnpm lint && pnpm build && pnpm test:unit && pnpm test:desktop",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .wrangler --ignore-pattern public/pdf.worker.min.mjs",
+    "pack:mac": "pnpm build && electron-builder --mac dmg --arm64 --x64 --publish never",
+    "test:desktop": "playwright test --config playwright.desktop.config.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "5.3.0",
+    "@fontsource-variable/geist-mono": "5.3.0",
+    "drizzle-orm": "0.45.2",
+    "fflate": "0.8.3",
+    "pdfjs-dist": "^6.2.108",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tesseract.js": "7.0.0",
+    "yjs": "13.6.32"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@eslint/js": "9.39.4",
+    "@next/eslint-plugin-next": "16.2.6",
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "drizzle-kit": "0.31.10",
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3",
+    "esbuild": "0.28.2",
+    "eslint": "9.39.4",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "16.4.0",
+    "react-server-dom-webpack": "19.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.59.3",
+    "vinext": "1.0.0-beta.2",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  },
+  "build": {
+    "appId": "com.noahgilbert.lightingdesigndesktop",
+    "productName": "Lighting Design Desktop",
+    "artifactName": "${productName}-${version}-${arch}.${ext}",
+    "directories": {
+      "output": "release-parity"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "lib/show-format.mjs",
+      "lib/show-validation.mjs",
+      "drizzle/*.sql",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md",
+      "notices/**/*",
+      "package.json",
+      "!node_modules/@napi-rs/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "examples",
+        "to": "examples",
+        "filter": [
+          "*.pdf",
+          "*.json",
+          "*.md",
+          "sources/**/*"
+        ]
+      }
+    ],
+    "mac": {
+      "identity": "-",
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg"
+      ],
+      "icon": "build/icon.png"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Office",
+      "icon": "build/icon.png"
+    },
+    "fileAssociations": [
+      {
+        "ext": "lxshow",
+        "name": "Lighting show",
+        "role": "Editor"
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "type": "module",
+  "license": "MIT",
+  "author": "Noah Gilbert",
+  "main": "electron/main.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nogi2027/lighting-design-desktop-public.git"
+  },
+  "description": "Offline lighting cue design with PDF import and portable show files"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "macbeth",
+    "title": "Macbeth",
+    "author": "William Shakespeare",
+    "source": "https://www.gutenberg.org/ebooks/1533",
+    "description": "Complete play. Verse, many scenes, and a serif layout.",
+    "font": "Times-Roman",
+    "size": 11,
+    "pages": 89,
+    "sha256": "d64d4236f7234255ce86d8b84c5ea4f6bf1f349d1a07ab42354d4dfb5a81f6d3",
+    "sourceSha256": "1371a47e68246197f7f57017a83386fed75dbfebfd0ff51b4524921a3b38ff5e"
+  },
+  {
+    "id": "earnest",
+    "title": "The Importance of Being Earnest",
+    "author": "Oscar Wilde",
+    "source": "https://www.gutenberg.org/ebooks/844",
+    "description": "Complete play. Dialogue, act headings, and a sans serif layout.",
+    "font": "Helvetica",
+    "size": 10,
+    "pages": 75,
+    "sha256": "10a7d28df5c783774a020bae8b38b9de3c7f41e0c1509e153489dd8d16f0e4bc",
+    "sourceSha256": "1b8a58099bb1cdef6a845277a4bacf2f4a268702c165bde30124d4b5105d1851"
+  },
+  {
+    "id": "macbeth-scanned",
+    "title": "Macbeth: scanned excerpt",
+    "author": "William Shakespeare",
+    "source": "https://www.gutenberg.org/ebooks/1533",
+    "description": "Three raster-only pages for trying offline OCR. No embedded text layer.",
+    "pages": 3,
+    "sha256": "d6f3175d28f8ce3112208e5d259f020e927c01960d6adf7d1fe8766a5e615203"
+  }
+]

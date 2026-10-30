@@ -1,0 +1,15 @@
+import { createRequire } from 'node:module';
+import { spawn } from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const folder=path.resolve(process.argv[2] || path.join(root,'artifacts/reading-lab'));
+if(!fs.existsSync(path.join(folder,'corpus/catalog.json')))throw new Error('Build the reading corpus first.');
+fs.mkdirSync(path.join(folder,'data'),{recursive:true});
+const log=fs.openSync(path.join(folder,'app.log'),'a');
+const electron=createRequire(import.meta.url)('electron');
+const env={...process.env,LX_DESKTOP_USER_DATA:path.join(folder,'data'),LX_DESKTOP_CORPUS:path.join(folder,'corpus'),LX_DESKTOP_START_IN_BACKGROUND:'1'};
+delete env.ELECTRON_RUN_AS_NODE;
+const child=spawn(electron,[root],{cwd:root,detached:true,stdio:['ignore',log,log],env});
+child.unref();fs.closeSync(log);

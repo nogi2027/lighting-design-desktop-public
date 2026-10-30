@@ -1,0 +1,6 @@
+Open Sans ExtraBold
+Digitized data copyright 2011, Google Corporation.
+Licensed under the Apache License, Version 2.0. See LICENSE.txt.
+
+This font is the same locally hosted Open Sans ExtraBold used by the approved
+script mockups. Its embedded license and copyright metadata are retained.

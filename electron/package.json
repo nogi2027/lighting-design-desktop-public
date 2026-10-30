@@ -1,0 +1,7 @@
+{
+  "name": "lighting-design-desktop",
+  "version": "0.1.0-preview.2",
+  "description": "Offline lighting design workspace",
+  "private": true,
+  "main": "main.cjs"
+}
